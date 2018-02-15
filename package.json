@@ -1,0 +1,23 @@
+{
+  "name": "constructor_hangman",
+  "version": "1.0.0",
+  "description": "This is a hangman game that will be played in the console ",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjsimon91/Constructor_Hangman.git"
+  },
+  "author": "Matthew Simon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjsimon91/Constructor_Hangman/issues"
+  },
+  "homepage": "https://github.com/mjsimon91/Constructor_Hangman#readme"
+}
