@@ -1,5 +1,4 @@
 var lettersGuessed = [];
-var lettersInWord =[];
 
 // var displayLetter = false;
 
@@ -11,9 +10,7 @@ function Letter(character,guessed){
   this.guessed = guessed;
 }
 // A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
-Letter.prototype.displayCharacter = function(){
-  
-};
+
 // A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
 // Letter.prototype.checkLetter = function(character){
 //   if (character == this.character) {
@@ -22,6 +19,6 @@ Letter.prototype.displayCharacter = function(){
 //   }
 // }
 
-module.export = Letter
+module.exports = Letter;
 
 //Look at each letter and see if there is a character in the place or space (DisplayCharacter)

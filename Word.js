@@ -1,17 +1,22 @@
 //require Letter.js
-require('./Letter.');
+var Letter = require("./Letter.js")
+var lettersInWord =[];
+
+
 
 // Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:
 
-function Word(gameString){ //gameString is the Phrase that is trying to be guessed
+function Word(currentWord){ //gameString is the Phrase that is trying to be guessed
   // An array of new Letter objects representing the letters of the underlying word
   this.lettersInWord = [];
-  this.gameString = gameString
+  this.currentWord = currentWord
   this.guesses = ""
   //Take each letter in the gameString and create an array of objects
-  for (var i = 0; i < gameString.length; i++) {
-    lettersInWord.push(
-      new Letter(word[i], false)
+  for (var i = 0; i < currentWord.length; i++) {
+    var newLetter = new Letter(currentWord[i], false)
+    this.lettersInWord.push(
+      newLetter
+      // new Letter(currentWord[i], false)
     );
   }
 }
